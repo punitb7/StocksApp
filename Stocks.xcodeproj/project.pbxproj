@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		840376A42AB05DD300606A2A /* StocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376A32AB05DD300606A2A /* StocksApp.swift */; };
-		840376A62AB05DD300606A2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376A52AB05DD300606A2A /* ContentView.swift */; };
 		840376A82AB05DD400606A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840376A72AB05DD400606A2A /* Assets.xcassets */; };
 		840376AB2AB05DD400606A2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840376AA2AB05DD400606A2A /* Preview Assets.xcassets */; };
+		840376B52AB06CAA00606A2A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376B42AB06CAA00606A2A /* DateHelper.swift */; };
+		840376B72AB077F300606A2A /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376B62AB077F300606A2A /* StockListView.swift */; };
+		840376BA2AB079C500606A2A /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376B92AB079C500606A2A /* StockData.swift */; };
+		840376BC2AB07AB400606A2A /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376BB2AB07AB400606A2A /* StockRowView.swift */; };
+		840376BE2AB0863200606A2A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376BD2AB0863200606A2A /* Helper.swift */; };
+		840376C12AB094F700606A2A /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376C02AB094F700606A2A /* StockListViewModel.swift */; };
+		840376C32AB0CDC400606A2A /* StockNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840376C22AB0CDC400606A2A /* StockNewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840376A02AB05DD300606A2A /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840376A32AB05DD300606A2A /* StocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksApp.swift; sourceTree = "<group>"; };
-		840376A52AB05DD300606A2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		840376A72AB05DD400606A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840376AA2AB05DD400606A2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		840376B42AB06CAA00606A2A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		840376B62AB077F300606A2A /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		840376B92AB079C500606A2A /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		840376BB2AB07AB400606A2A /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
+		840376BD2AB0863200606A2A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		840376C02AB094F700606A2A /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		840376C22AB0CDC400606A2A /* StockNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		840376A22AB05DD300606A2A /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				840376A32AB05DD300606A2A /* StocksApp.swift */,
-				840376A52AB05DD300606A2A /* ContentView.swift */,
+				840376B12AB06A8C00606A2A /* App */,
+				840376B32AB06C5F00606A2A /* Utils */,
+				840376B82AB0799B00606A2A /* Models */,
+				840376BF2AB094BE00606A2A /* ViewModels */,
+				840376B22AB06B1900606A2A /* Views */,
 				840376A72AB05DD400606A2A /* Assets.xcassets */,
 				840376A92AB05DD400606A2A /* Preview Content */,
 			);
@@ -65,6 +80,49 @@
 				840376AA2AB05DD400606A2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		840376B12AB06A8C00606A2A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				840376A32AB05DD300606A2A /* StocksApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		840376B22AB06B1900606A2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				840376B62AB077F300606A2A /* StockListView.swift */,
+				840376BB2AB07AB400606A2A /* StockRowView.swift */,
+				840376C22AB0CDC400606A2A /* StockNewsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		840376B32AB06C5F00606A2A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				840376BD2AB0863200606A2A /* Helper.swift */,
+				840376B42AB06CAA00606A2A /* DateHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		840376B82AB0799B00606A2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840376B92AB079C500606A2A /* StockData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		840376BF2AB094BE00606A2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				840376C02AB094F700606A2A /* StockListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840376A62AB05DD300606A2A /* ContentView.swift in Sources */,
+				840376BA2AB079C500606A2A /* StockData.swift in Sources */,
+				840376BC2AB07AB400606A2A /* StockRowView.swift in Sources */,
+				840376C32AB0CDC400606A2A /* StockNewsView.swift in Sources */,
+				840376B52AB06CAA00606A2A /* DateHelper.swift in Sources */,
+				840376B72AB077F300606A2A /* StockListView.swift in Sources */,
+				840376C12AB094F700606A2A /* StockListViewModel.swift in Sources */,
 				840376A42AB05DD300606A2A /* StocksApp.swift in Sources */,
+				840376BE2AB0863200606A2A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +331,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Stocks/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Stocks;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,9 +347,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,13 +365,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Stocks/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Stocks;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,9 +381,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
